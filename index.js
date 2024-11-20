@@ -4,4 +4,22 @@ document.querySelector("button").addEventListener("click", () => {
 
   diceStartImage.style.display = "none";
   diceRollImages.style.display = "grid";
+
+  let randomNum1 = Math.floor(Math.random() * 6) + 1;
+  let randomDiceImage1 = "images/dice-" + randomNum1 + ".png";
+  let image1 = document.getElementById("img-1");
+  image1.setAttribute("src", randomDiceImage1);
+
+  let randomNum2 = Math.floor(Math.random() * 6) + 1;
+  let randomDiceImage2 = "images/dice-" + randomNum2 + ".png";
+  let image2 = document.getElementById("img-2");
+  image2.setAttribute("src", randomDiceImage2);
+
+  if (randomNum1 > randomNum2) {
+    document.querySelector(".winner-text").textContent = "Player 1 wins!";
+  } else if (randomNum1 < randomNum2) {
+    document.querySelector(".winner-text").textContent = "Player 2 wins!";
+  } else {
+    document.querySelector(".winner-text").textContent = "Draw!";
+  }
 })
