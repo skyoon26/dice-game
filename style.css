@@ -4,18 +4,38 @@ body {
   color: white;
 }
 
-.container {
+.flex-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 80px;
+  padding: 0px 1rem;
 }
 
 h1 {
   font-size: 6rem;
   text-shadow: 4px 4px grey;
   text-align: center;
+  margin: 6rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+
+.img1, .img2 {
+  width: 15rem;
+}
+
+.grid-item {
+  font-size: 2rem;
+}
+
+.button-container {
+  margin: 2rem;
 }
 
 button {
