@@ -18,14 +18,19 @@ document.querySelector("button").addEventListener("click", () => {
   let image2 = document.getElementById("img-2");
   image2.setAttribute("src", randomDiceImage2);
 
+  document.getElementById("player-1").textContent = "Player 1";
+  document.getElementById("player-2").textContent = "Player 2";
+
   if (randomNum1 > randomNum2) {
     document.querySelector(".winner-text").textContent = "Player 1 wins!";
     count1++;
     document.getElementById("count-1").textContent = "Count: " + count1;
+    document.getElementById("player-1").textContent = "Player 1 🏆";
   } else if (randomNum1 < randomNum2) {
     document.querySelector(".winner-text").textContent = "Player 2 wins!";
     count2++
     document.getElementById("count-2").textContent = "Count: " + count2;
+    document.getElementById("player-2").textContent = "Player 2 🏆";
   } else {
     document.querySelector(".winner-text").textContent = "Draw!";
   }
