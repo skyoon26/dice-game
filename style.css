@@ -17,7 +17,11 @@ h1 {
   font-size: 6rem;
   text-shadow: 4px 4px grey;
   text-align: center;
-  margin: 6rem;
+  margin: 3rem 6rem;
+}
+
+#dice-start {
+  margin-top: 1.5rem;
 }
 
 #img-start {
@@ -27,11 +31,18 @@ h1 {
 .grid-container {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-top: 1.5rem;
   display: none;
 }
 
 .winner-text {
   grid-column: span 2;
+  padding: 0;
+  font-size: 24px;
+}
+
+.winner-text:hover {
+  text-shadow: 2px 2px 5px red;
 }
 
 #img-1, #img-2 {
@@ -40,6 +51,7 @@ h1 {
 
 .grid-item {
   font-size: 2rem;
+  font-size: 16px;
 }
 
 .button-container {
