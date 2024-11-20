@@ -12,21 +12,23 @@
 <body>
   <div class="flex-container">
     <h1>Want to play a game?</h1>
-    <p>Press the button to start</p>
-    <div class="start-image">
-      <img src="images/rolling-dices.png" />
+    <div id="dice-start">
+      <p>Press the button to start</p>
+      <img id="img-start" src="images/rolling-dices.png" />
     </div>
-
-    <div class="grid-container">
+    
+    <div id="dice-roll" class="grid-container">
+      <p class="winner-text">Player 1 wins!</p>
       <div class="grid-item">
         <p>Player 1</p>
-        <img class="img1" src="images/dice-six.png">
+        <img id="img1" src="images/dice-six.png">
       </div>
       <div class="grid-item">
         <p>Player 2</p>
-        <img class="img2" src="images/dice-six.png">
+        <img id="img2" src="images/dice-six.png">
       </div>
     </div>
+
     <div class="button-container">
       <button>Roll</button>
     </div>

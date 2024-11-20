@@ -2,6 +2,7 @@ body {
   background-color: black;
   font-family: "Silkscreen", 'Courier New', Courier, monospace;
   color: white;
+  text-align: center;
 }
 
 .flex-container {
@@ -19,14 +20,21 @@ h1 {
   margin: 6rem;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  text-align: center;
+#img-start {
+  width: 20rem;
 }
 
-.img1, .img2 {
+.grid-container {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  display: none;
+}
+
+.winner-text {
+  grid-column: span 2;
+}
+
+#img1, #img2 {
   width: 15rem;
 }
 
