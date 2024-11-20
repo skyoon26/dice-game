@@ -1,3 +1,6 @@
+let count1 = 0;
+let count2 = 0;
+
 document.querySelector("button").addEventListener("click", () => {
   let diceStartImage = document.getElementById("dice-start");
   let diceRollImages = document.getElementById("dice-roll");
@@ -17,8 +20,12 @@ document.querySelector("button").addEventListener("click", () => {
 
   if (randomNum1 > randomNum2) {
     document.querySelector(".winner-text").textContent = "Player 1 wins!";
+    count1++;
+    document.getElementById("count-1").textContent = "Count: " + count1;
   } else if (randomNum1 < randomNum2) {
     document.querySelector(".winner-text").textContent = "Player 2 wins!";
+    count2++
+    document.getElementById("count-2").textContent = "Count: " + count2;
   } else {
     document.querySelector(".winner-text").textContent = "Draw!";
   }
